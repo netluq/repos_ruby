@@ -29,7 +29,7 @@ class SlideShow
   def slide_show
     subtitle_array.sort_by! {|subtitle| subtitle[:end_time]}
     Subtitle.load_list(subtitle_array).each do |subtitle|
-      # w tej petli chcialbym wykonac np operacje mnozenia: subtile[:start_time] * framerate,
+      # w tej petli chcialbym wykonac np operacje mnozenia: subtile[:start_time] * framerate
       # ale Subtitle.to_s nie zwraca mi juz tego w postaci tablicy
       puts subtitle
     end
